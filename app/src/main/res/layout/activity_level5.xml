@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".Level5">
+
+    <TextView
+        android:id="@+id/Jawaban"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="324dp"
+        android:text="opsi Yang dipilih :"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Berapa ukuran maksimal satu file yang dapat dikirim ke sistem file FAT32?"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+    <ImageView
+        android:id="@+id/ivComputerImage"
+        android:layout_width="370dp"
+        android:layout_height="181dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/pcs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvQuestion" />
+
+    <Button
+        android:id="@+id/btnOption1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="2 GB"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/Jawaban"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnOption2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="4 GB"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/btnOption1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnOption3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="8 GB"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/btnOption2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnOption4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="16 GB"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/btnOption3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_marginTop="32dp"
+        app:cornerRadius="16dp"
+        app:layout_constraintTop_toBottomOf="@id/btnOption4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
